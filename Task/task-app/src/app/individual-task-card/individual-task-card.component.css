@@ -1,0 +1,10 @@
+.task-list {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .task-list-item {
+    margin-right: 10px;
+  }

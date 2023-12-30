@@ -1,0 +1,29 @@
+<p>WELCOM USER!</p>
+
+<div>
+<button (click)="createNewList()">Create New List</button>
+</div>
+
+<div id="container">
+<div cdkDropListGroup>
+<span *ngFor="let allTasksInContainer of listOfTasks; index as listOfTasks" class="inline-block-span" >
+    <div
+    cdkDropList="allTasksInContainer"
+    [cdkDropListData]="listOfTasks"
+    (cdkDropListDropped)="onTaskDropped($event)"
+   
+    class="task-list" 
+    
+  >
+  {{listOfTasks}}
+  
+    <app-individual-task-card [taskDetails]="allTasksInContainer" [index]="listOfTasks.toString()"></app-individual-task-card>
+    
+    </div>
+    <button>Add new tasks</button>
+</span>
+
+</div>
+
+
+</div>

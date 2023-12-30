@@ -1,0 +1,13 @@
+
+
+<div
+
+      cdkDrag
+      [cdkDragData]="task"
+     
+      class="task"
+    >
+      {{ task.title }}
+      <input type="checkbox" id="task.id" name="task.id" value="task.id" (input)="onInputChange(task)">
+    </div>
+
